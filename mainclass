@@ -1,0 +1,84 @@
+APLICACION_JAVA1
+================
+
+PROGRAMACIÓN ORIENTADA A OBJETOS
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		//create object Professor
+		
+		Profesor profesor1= new Profesor();
+		profesor1.setCedula_prof("DE-122-FR-1323");
+		profesor1.setTurno("Matutino");
+		profesor1.setEspecialidad("Historia");
+		profesor1.setSueldo_base(2500);
+		profesor1.setNombre("Arturo Sánchez Sánchez");
+		profesor1.setEdad(30);
+		profesor1.setSexo("Masculino");
+		profesor1.setDomicilio("Calle:Zaragoza No24 Col Centro");
+
+		
+		//create object Alum
+		Alumno alumno1= new Alumno();
+		alumno1.setNombre("José Hérnadez Díaz" );
+		alumno1.setEdad(12);
+		alumno1.setSexo("Masculino");
+		alumno1.setDomicilio("Calle:Independencia No117 Col Industrial");
+		alumno1.setMatricula("ND123DE");
+		alumno1.setGrado(3);
+		alumno1.setGrupo("C");
+		
+		//create object director
+		Director director1=new Director();
+		director1.setNombre("Diana Jimenéz Rivas");
+		director1.setEdad(32);
+		director1.setSexo("Femenino");
+		director1.setDomicilio("Calle:Sur22 No254 Col Centro");
+		director1.setMatricula("DCE1323-D");
+				
+		//create object stricter
+		Subdirector subdirector1= new Subdirector();
+		subdirector1.setTurno("Matutino");
+		subdirector1.setNombre("Fernando Suáres Alatoma");
+		subdirector1.setEdad(27);
+		subdirector1.setSexo("Masculino");
+		subdirector1.setDomicilio("Calle:6Poniente No84 Col Lomas");
+		
+		//create object school
+		Escuela escuela1= new Escuela();
+		escuela1.setNombre_escuela("Josefa Ortíz De Domínguez");
+		escuela1.setClave_esc("JOD1246-MSEP");
+		escuela1.setDireccion("Calle Ignacio Zaragoza No354 Col Centro");
+		
+		//create object group
+		Grupo grupo1= new Grupo();
+		grupo1.setNombre_grup("C");
+		grupo1.setNumero_alumnos(23);
+		
+		//create object secretary
+		Secretaria secretaria1= new Secretaria();
+		secretaria1.setNombre("Laura Salazar Flores");
+		secretaria1.setEdad(25);
+		secretaria1.setSexo("Femenino");
+		secretaria1.setDomicilio("Calle:Sur7 No324 Col Insurgentes");
+		secretaria1.setAnios_contrato(2);
+		secretaria1.setClave_contrato("CDF1234");
+		secretaria1.setTurno("Matutino");
+		
+		//create object Conserj
+		Conserje conserje11= new Conserje();
+		conserje11.setNombre("Arturo Cuevas Durant");
+		conserje11.setEdad(29);
+		conserje11.setSexo("Masculino");
+		conserje11.setDomicilio("Calle:8Poniente No784 Col centro");;
+		conserje11.setAnios_antig(4);
+		conserje11.setClave_trabajo("DEF1245-DFG");
+		conserje11.setHoras_jornada(7);
+		conserje11.setTurno("Matutino");
+		
+	
+		System.out.println("La escuela primaria " + escuela1.getNombre_escuela() + " con direccion en: " + escuela1.getDireccion() + " y con clave de trabajo " + escuela1.getClave_esc());
+		System.out.println(" donde se encuentra el director: " + director1.getNombre() + " y su secretaria " + secretaria1.getNombre() + " donde tambien laboran el conserje " + conserje11.getNombre() + " del turno " + conserje11.getTurno());
+		System.out.println(" en la misma escuela tambien se encuentra el grupo: " + grupo1.getNombre_grup() + " a cargo del profesor " + profesor1.getNombre() + " de la especialidad en " + profesor1.getEspecialidad() + " donde destaca el alumno: " + alumno1.getNombre() + "  con una matricula" + alumno1.getMatricula());
